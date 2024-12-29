@@ -5,9 +5,9 @@ print(numbers)
 
 class Solution:
     def  twoSum(self, numbers: List[int], target: int) -> List[int]:
-        l, r = 0, len(numbers) - 1
+        l, r = 0, len(numbers) - 1  # left pointer starts at the beggining, right pointer startes at the end
 
-        while l < r:
+        while l < r:  # if the nuber is bigger than the target, move the right pointer left, if it is smaller do the reverse
             curSum = numbers[l] + numbers[r]
 
             if curSum > target:
@@ -17,4 +17,4 @@ class Solution:
             else:
                 return [l + 1, r + 1]
         return[]
-    # linear time solution
+    # linear time solution O(n)

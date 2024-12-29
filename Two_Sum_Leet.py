@@ -7,7 +7,7 @@ class Solution:
     def  twoSum(self, nums: List[int], target: int) -> List[int]:
         prevMap = {} # val:index
 
-        for i, n in enumerate(nums):
+        for i, n in enumerate(nums):  # looking for the diffrence between the n and the target and seeing if it is in the hashmap
             diff  = target - n
             if diff in prevMap:
                 return [prevMap[diff], i]

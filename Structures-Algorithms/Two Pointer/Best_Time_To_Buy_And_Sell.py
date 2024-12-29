@@ -11,9 +11,9 @@ class Solution:
        while r < len (prices):
            if prices[l] < prices [r]:
                profit = prices[r] = prices[l]
-               MaxP = max(MaxP, profit)
-           else:
-               l = r
+               MaxP = max(MaxP, profit) # checking if the profit is bigger then the current max
+           else:   # no profit, is a loss
+               l = r  
        r += 1
        
        return MaxP
