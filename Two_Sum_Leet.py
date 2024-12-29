@@ -1,4 +1,4 @@
-#Leetcode 1 Two sum, find the two sums that add up to the target, assume you hav only one solution and return the indexes
+# Leetcode 1 Two sum, find the two sums that add up to the target, assume you hav only one solution and return the indexes
 nums = [2, 7, 11, 15]
 target = 9
 print(nums)

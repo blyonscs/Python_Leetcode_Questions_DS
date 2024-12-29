@@ -10,7 +10,7 @@ class Solution:
         while l < r:
             curSum = numbers[l] + numbers[r]
 
-            if curSum < target:
+            if curSum > target:
                 r -= 1
             elif curSum < target:
                 l += 1
