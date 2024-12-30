@@ -13,6 +13,5 @@ class Solution:
             fast = fast.next.next # move two nodes
             if slow == fast:
                 return True
-
             return False
 # fast and slow pointers will always meet each other if there is a cycle
